@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🥑Other 🥑</title>
+</head>
+<body>
+    <img src="https://cdn.pixabay.com/photo/2018/07/03/03/48/avocados-3513048_960_720.jpg" alt="Background" class="bg">
+    <div class="selection">
+            <iframe width="500" height="150" src="https://www.youtube.com/embed/2ZIpFytCSVc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" disablefullscreen></iframe>
+            <div class="suggestion">
+                <p>Have a suggestion for a song / category?<br>Send a link to Youtube or SoundCloud down below ⬇️</p>
+<form action="https://formspree.io/mbjzpwwy" method="POST">
+        <label>
+            Your email:<br>
+            <input type="text" name="_replyto">
+        </label><br>
+        <label>   
+            Your message:<br>
+            <textarea name="message"></textarea>
+        </label><br>
+    <button type="submit">Send</button>
+</form>
+            </div>
+    </div>
+</body>
+<style>
+label {
+    text-align: center;
+    padding-bottom: 3em;
+}
+
+textarea {
+    width: 12em;
+    max-height: 30em;
+    max-width: 30em;
+}
+
+body {
+    background-color: #292929;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.selection {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    justify-self: center;
+    grid-template-columns: 1;
+}
+
+button {
+    transition: 0.3s;
+    color: #292929;
+    background-color: rgb(255, 255, 255);
+    border: 1px;
+    padding: 0.5em;
+    margin: 1em;
+    border-radius: 1em;
+    box-shadow: 0px 0px 10px -2px #292929;
+    width: 4em;
+}
+
+button:hover {
+    color: whitesmoke;
+    background-color: lawngreen;
+}
+
+.suggestion {
+    position: relative;
+    background-color: whitesmoke;
+    max-width: 500;
+    height: 300;
+    text-align: center;
+    border-radius: 1em;
+    padding: 0.5em;
+}
+
+iframe {
+    margin: 1em;
+    border-radius: 1em;
+    position: relative;
+}
+
+.bg {
+    min-width: 100%;
+	min-height: 100%;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    object-fit: cover;
+    filter: blur(0.5em);
+    opacity: 50%;
+    z-index: 0;
+}
+</style>
+</html>
