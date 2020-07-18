@@ -2,9 +2,10 @@
 Catocarized audio library for the game Dungeons and Dragons
 
 # Website: 
-https://affectionate-kirch-1f97c5.netlify.app/  (Recommended)
+https://dndmixer.netlify.app/  (Recommended)
 
 http://dndmixer.cf
+http://dndmixer.ga
 
 
 Planned :
