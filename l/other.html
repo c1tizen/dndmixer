@@ -8,9 +8,9 @@
 <body>
     <img src="https://cdn.pixabay.com/photo/2018/07/03/03/48/avocados-3513048_960_720.jpg" alt="Background" class="bg">
     <div class="selection">
-            <iframe width="500" height="150" src="https://www.youtube.com/embed/2ZIpFytCSVc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" disablefullscreen></iframe>
+        <iframe width="500" height="150" src="https://www.youtube.com/embed/OPFqGKbZMKw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div class="suggestion">
-                <p>Have a suggestion for a song / category?<br>Send a link to Youtube or SoundCloud down below ⬇️</p>
+                <p>Send your feedback / suggestion for a song here!<br>Send a link to Youtube or SoundCloud down below ⬇️</p>
 <form action="https://formspree.io/mbjzpwwy" method="POST">
         <label>
             Your email:<br>
@@ -20,15 +20,21 @@
             Your message:<br>
             <textarea name="message"></textarea>
         </label><br>
-    <button type="submit">Send</button>
+    <button id="submitButton" type="submit">Send</button>
 </form>
             </div>
     </div>
+    <button onclick="goBack()" id="back" style="position:absolute;z-index:5;background-color:#f5f5f5;text-decoration:none;color:orange;padding:1em;margin:1em;top:0;left:0;border-radius:1em;transition:.3s;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif; border:none;cursor:pointer;">⭠ Back to menu</button>
+    <style>*{overflow-x: hidden;}</style><script>function goBack() {window.history.back()}</script>
 </body>
 <style>
 label {
     text-align: center;
     padding-bottom: 3em;
+}
+
+form {
+    overflow-y: hidden;
 }
 
 textarea {
@@ -53,7 +59,7 @@ body {
     grid-template-columns: 1;
 }
 
-button {
+#submitButton {
     transition: 0.3s;
     color: #292929;
     background-color: rgb(255, 255, 255);
@@ -67,7 +73,8 @@ button {
 
 button:hover {
     color: whitesmoke;
-    background-color: lawngreen;
+    background-color: rgb(164, 164, 164);
+    cursor: pointer;
 }
 
 .suggestion {

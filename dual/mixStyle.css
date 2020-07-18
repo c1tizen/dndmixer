@@ -32,16 +32,16 @@ body {
 
 a {
     position: relative;
-    padding: 2em;
+    padding: 1.5em;
     border-radius: 1em;
     border: none;
-    width: 10em;
+    width: 8em;
     z-index: 10;
     background-color: #fefefe;
     text-decoration: none;
     color: #303030;
     text-align: center;
-    margin: 1em;
+    margin: 0.5em;
     transition: 0.3s;
     font-size: 120%;
 }
@@ -49,13 +49,48 @@ a {
 a:hover {
     background-color: #303030;
     color: #fefefe;
+    opacity: 100%;
 }
 
-.madeBy {
-    background-color: #303030;
-    color: #fefefe;
+.pub {
+    grid-row: 1;
+    grid-column: 1;
 }
 
+.crowd {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.fire {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.music {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.weather {
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.sea {
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.ambient {
+    grid-row: 4;
+    grid-column: 1;
+}
+
+.other {
+    grid-row: 4;
+    grid-column: 2;
+}
 
 .selection {
     width: 100%;
